@@ -18,10 +18,10 @@
 export ROS_HOME=/tmp/rossyshome
 
 # path to daemon
-DAEMON=`rospack find ps3joy`/ps3joy.py
+DAEMON=`which rosrun`
 
 # startup args
-DAEMON_OPTS="--inactivity-timeout=900 --redirect-output=/var/log/ps3joy.log"
+DAEMON_OPTS="ps3joy ps3joy.py --inactivity-timeout=900 --redirect-output=/var/log/ps3joy.log"
 
 # script name
 NAME=ps3joy
